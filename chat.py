@@ -3,7 +3,7 @@ def read_file(file_name):
 	with open(file_name, 'r', encoding = 'utf-8-sig') as f: # -sig為刪除存檔編碼資料之編碼方式
 		for line in f:
 			lines.append(line.strip())
-	return(lines)
+	return lines
 
 def convert(lines):
 	new = []
@@ -17,7 +17,7 @@ def convert(lines):
 			continue
 		if person:
 			new.append(person + ': ' + line)
-	return(new)
+	return new
 
 def write_file(file_name, lines):
 	with open(file_name, 'w', encoding='utf-8-sig') as f:
