@@ -52,7 +52,6 @@ def write_file(file_name, lines):
 def main():
 	lines = read_file('LINE-Viki.txt')
 	lines = convert(lines)
-	# write_file('output.txt', lines)
 
 
 main()
