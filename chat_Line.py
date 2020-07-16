@@ -5,6 +5,7 @@ def read_file(file_name):
 			lines.append(line.strip())
 	return lines
 
+
 def convert(lines):
 	person = None # 虛無, 用於不存在的部分
 	allen_word_count = 0
@@ -47,9 +48,11 @@ def write_file(file_name, lines):
 		for line in lines:
 			f.write(line + '\n')
 
+
 def main():
 	lines = read_file('LINE-Viki.txt')
 	lines = convert(lines)
 	# write_file('output.txt', lines)
+
 
 main()
